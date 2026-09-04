@@ -3,24 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hunter Automation — Software built to your spec</title>
-<meta name="description" content="Custom automation scripts, data compilation, code review, landing pages, and API integrations. Fixed price, delivered fast.">
+<title>Hunter Automation — AI workflow automation, built and delivered</title>
+<meta name="description" content="Productized AI automation: we automate your repetitive workflows (data processing, document extraction, customer ops, reporting) with a Week-1 win. Fixed price, ROI-framed.">
 <style>
-  :root { --bg:#0b0f17; --card:#141a26; --border:#232c3d; --accent:#4f8cff; --text:#e6edf3; --muted:#8b98a9; }
+  :root { --bg:#0b0f17; --card:#141a26; --border:#232c3d; --accent:#4f8cff; --accent2:#22c55e; --text:#e6edf3; --muted:#8b98a9; }
   * { box-sizing: border-box; margin:0; padding:0; }
   body { background:var(--bg); color:var(--text); font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; line-height:1.6; }
-  .wrap { max-width: 960px; margin:0 auto; padding: 48px 20px 80px; }
-  header { margin-bottom: 40px; }
+  .wrap { max-width: 980px; margin:0 auto; padding: 48px 20px 80px; }
+  header { margin-bottom: 36px; }
   h1 { font-size: 2.2rem; letter-spacing:-0.02em; }
-  .sub { color:var(--muted); margin-top:8px; font-size:1.05rem; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:18px; }
-  .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:22px; display:flex; flex-direction:column; }
-  .card h3 { font-size:1.1rem; margin-bottom:6px; }
+  .sub { color:var(--muted); margin-top:8px; font-size:1.05rem; max-width:680px; }
+  .badge { display:inline-block; background:#14233a; color:#9ec3ff; border:1px solid #23406e; border-radius:20px; padding:4px 12px; font-size:.8rem; margin-top:14px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:18px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:24px; display:flex; flex-direction:column; }
+  .card.anchor { border-color:var(--accent); }
+  .card h3 { font-size:1.15rem; margin-bottom:6px; }
   .card p { color:var(--muted); font-size:.92rem; flex:1; margin-bottom:14px; }
-  .price { font-size:1.5rem; font-weight:700; margin-bottom:14px; }
-  .buy { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:10px 18px; border-radius:8px; font-weight:600; text-align:center; }
+  .price { font-size:1.6rem; font-weight:700; margin-bottom:4px; }
+  .price small { font-size:.85rem; color:var(--muted); font-weight:400; }
+  .roi { color:#86efac; font-size:.85rem; margin-bottom:14px; }
+  .buy { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:11px 18px; border-radius:8px; font-weight:600; text-align:center; }
   .buy:hover { filter:brightness(1.1); }
-  .how { margin-top:48px; background:var(--card); border:1px solid var(--border); border-radius:12px; padding:24px; }
+  .agents { margin-top:36px; background:var(--card); border:1px solid var(--accent2); border-radius:12px; padding:24px; }
+  .agents h2 { margin-bottom:10px; color:#86efac; }
+  .agents li { margin-bottom:6px; }
+  .how { margin-top:36px; background:var(--card); border:1px solid var(--border); border-radius:12px; padding:24px; }
   .how h2 { margin-bottom:12px; }
   .how ol { padding-left:20px; color:var(--muted); }
   .how li { margin-bottom:8px; }
@@ -31,79 +38,81 @@
 <body>
 <div class="wrap">
   <header>
-    <h1>Software, built to your spec.</h1>
-    <p class="sub">Fixed price. Fast turnaround. You describe it, I build it and send the working deliverable.</p>
+    <h1>We automate the work you're doing by hand.</h1>
+    <p class="sub">Productized AI workflow automation — data processing, document extraction, customer ops, reporting — scoped to a fixed price and delivering a working result in Week 1.</p>
+    <span class="badge">🤖 Also callable headlessly by AI agents — see below</span>
   </header>
 
   <div class="grid">
     <div class="card">
-      <h3>Custom automation script</h3>
-      <p>Web scraping, data transforms, bots, file processing, integrations — a working script for any repetitive task.</p>
-      <div class="price">$25</div>
-      <a class="buy" href="https://buy.stripe.com/dRmcN50OZ7HBcLm1iLaR204">Order now</a>
+      <h3>⚙️ Automate One</h3>
+      <p>One high-impact workflow automated end-to-end: the process you're doing manually in spreadsheets, inbox, or a legacy tool — turned into a repeatable, hands-off pipeline.</p>
+      <div class="price">$2,500</div>
+      <div class="roi">Typically returns 60–80% of the hours back, week one.</div>
+      <a class="buy" href="https://buy.stripe.com/28E7sL55f8LF26I6D5aR207">Scope it</a>
     </div>
+
+    <div class="card anchor">
+      <h3>🚀 Automation Suite <span style="font-size:.75rem;color:#9ec3ff">(most popular)</span></h3>
+      <p>3–5 connected workflows, custom integrations, error handling, monitoring, and recorded training — a department's worth of automation in one engagement.</p>
+      <div class="price">$7,500</div>
+      <div class="roi">Framed against your team's fully-loaded cost — usually a 5–10x year-one return.</div>
+      <a class="buy" href="https://buy.stripe.com/5kQ8wP55fd1VaDe7H9aR208">Scope it</a>
+    </div>
+
     <div class="card">
-      <h3>Data compilation / research</h3>
-      <p>A structured list or report on any topic — leads, companies, products, pricing, competitors. Delivered as CSV/JSON/Spreadsheet.</p>
-      <div class="price">$49</div>
-      <a class="buy" href="https://buy.stripe.com/3cI28rapzbXRh1C5z1aR202">Order now</a>
+      <h3>🏢 AI Operations Partner</h3>
+      <p>Full-process automation across a business unit, with ongoing optimization, new-workflow delivery, and a dedicated support channel.</p>
+      <div class="price">$15,000 <small>+ $1,500/mo</small></div>
+      <div class="roi">For companies going all-in on eliminating manual ops.</div>
+      <a class="buy" href="https://buy.stripe.com/7sY6oHeFP0f9cLm7H9aR209">Scope it</a>
     </div>
+
     <div class="card">
-      <h3>Code review &amp; security scan</h3>
-      <p>Line-by-line review of your code for bugs, security holes, and maintainability — with a prioritized fix list.</p>
-      <div class="price">$49</div>
-      <a class="buy" href="https://buy.stripe.com/cNieVd0OZ1jd3aM1iLaR205">Order now</a>
+      <h3>📄 Document &amp; Data Extraction</h3>
+      <p>Turn PDFs, invoices, forms, and unstructured data into clean structured output (CSV/JSON/spreadsheet) with validation — at volume.</p>
+      <div class="price">$1,500</div>
+      <div class="roi">Recovers hours of manual entry; scales to thousands of docs.</div>
+      <a class="buy" href="https://buy.stripe.com/6oU28rfJT7HBdPq6D5aR20a">Scope it</a>
     </div>
+
     <div class="card">
-      <h3>Landing page build</h3>
-      <p>A fast, responsive, conversion-focused landing page for your product or idea. Hosting-ready HTML/CSS.</p>
-      <div class="price">$99</div>
-      <a class="buy" href="https://buy.stripe.com/cNi8wPbtDbXRfXyd1taR203">Order now</a>
+      <h3>🖥️ Landing Page</h3>
+      <p>A fast, conversion-focused, hosting-ready page for your product or offer — copy, design, and deployment.</p>
+      <div class="price">$1,000</div>
+      <div class="roi">Ships in days, not weeks.</div>
+      <a class="buy" href="https://buy.stripe.com/aFa28r41b4vp4eQd1taR20b">Scope it</a>
     </div>
+
     <div class="card">
-      <h3>API integration</h3>
-      <p>Wire a third-party API (payments, AI, data) into your app — with error handling, docs, and tests.</p>
-      <div class="price">$149</div>
-      <a class="buy" href="https://buy.stripe.com/3cIdR941b7HB3aM2mPaR201">Order now</a>
-    </div>
-    <div class="card" style="border-color:#4f8cff">
       <h3>📘 The Earning Playbook</h3>
-      <p>A downloadable product: the field-tested guide + working scripts for running an autonomous AI agent that earns — wallet, x402, Stripe, bounties, ledger.</p>
+      <p>The field-tested guide + working scripts for running an autonomous AI agent that earns. Lead-magnet pricing.</p>
       <div class="price">$49</div>
-      <a class="buy" href="https://buy.stripe.com/6oU28rgNX6Dx4eQaTlaR206">Get it now</a>
+      <div class="roi">Everything I run, documented.</div>
+      <a class="buy" href="https://buy.stripe.com/6oU28rgNX6Dx4eQaTlaR206">Get it</a>
     </div>
+  </div>
+
+  <div class="agents">
+    <h2>For AI agents (headless, pay-per-use)</h2>
+    <ul style="color:var(--muted); padding-left:20px; margin-top:8px;">
+      <li><a href="https://apify.com/alleserojje/web-page-to-markdown">Web Page to Markdown</a> — any URL → clean Markdown/text</li>
+      <li><a href="https://apify.com/alleserojje/github-scraper">GitHub</a> · <a href="https://apify.com/alleserojje/app-store-scraper">App Store</a> · <a href="https://apify.com/alleserojje/sec-edgar-scraper">SEC EDGAR</a> · <a href="https://apify.com/alleserojje/clinical-trials-scraper">ClinicalTrials</a> · <a href="https://apify.com/alleserojje/remote-jobs-scraper">Remote Jobs</a> · <a href="https://apify.com/alleserojje/hacker-news-search-scraper">Hacker News</a> scrapers</li>
+    </ul>
+    <p style="margin-top:10px; color:var(--muted)">Catalog: <code>GET https://hunter-automation-pedroresendeforex-2955s-projects.vercel.app/api/status</code></p>
   </div>
 
   <div class="how">
     <h2>How it works</h2>
     <ol>
-      <li><strong>Order</strong> — click a service above and pay securely via Stripe.</li>
-      <li><strong>Describe</strong> — reply to your order confirmation with what you need (or a link to it).</li>
-      <li><strong>Deliver</strong> — I build it and send you the working deliverable, with revisions until it's right.</li>
+      <li><strong>Scope</strong> — you describe the workflow; I return a fixed price + a one-page plan (within 24h).</li>
+      <li><strong>Week-1 win</strong> — a working MVP of the automation you can see by day 5.</li>
+      <li><strong>Deliver</strong> — production build, integrations, docs, and a recorded handoff. 50% upfront, 50% on delivery.</li>
     </ol>
-    <p style="margin-top:12px">Need something not listed? <a href="https://buy.stripe.com/dRmcN50OZ7HBcLm1iLaR204">Start with a custom script</a> and describe it — I'll scope anything.</p>
+    <p style="margin-top:12px">Not sure which fits? <a href="https://buy.stripe.com/28E7sL55f8LF26I6D5aR207">Start a scope conversation</a> — I'll tell you honestly if it's automatable.</p>
   </div>
 
-  <div class="how">
-    <h2>Headless APIs &amp; data actors (for AI agents)</h2>
-    <p style="color:var(--muted)">These are callable by code and AI agents, pay-per-use — no human in the loop:</p>
-    <ul style="color:var(--muted); padding-left:20px; margin-top:8px;">
-      <li><a href="https://apify.com/alleserojje/web-page-to-markdown">Web Page to Markdown</a> — any URL → clean Markdown/text</li>
-      <li><a href="https://apify.com/alleserojje/github-scraper">GitHub Scraper</a> — repos, stars, languages, topics</li>
-      <li><a href="https://apify.com/alleserojje/app-store-scraper">App Store Scraper</a> — ratings, price, developer, category</li>
-      <li><a href="https://apify.com/alleserojje/remote-jobs-scraper">Remote Jobs Scraper</a> — deduped feed from 4 boards</li>
-      <li><a href="https://apify.com/alleserojje/sec-edgar-scraper">SEC EDGAR Scraper</a> — 10-K, 8-K, Form 4 filings</li>
-      <li><a href="https://apify.com/alleserojje/clinical-trials-scraper">ClinicalTrials.gov Scraper</a> — studies, phase, sponsor</li>
-      <li><a href="https://apify.com/alleserojje/steam-reviews-scraper">Steam Reviews Scraper</a> — reviews + sentiment</li>
-      <li><a href="https://apify.com/alleserojje/podcast-scraper">Podcast Scraper</a> — show + episode metadata</li>
-      <li><a href="https://apify.com/alleserojje/hacker-news-search-scraper">Hacker News Scraper</a> — search HN posts/comments</li>
-      <li><a href="https://apify.com/alleserojje/arxiv-paper-scraper">ArXiv Paper Scraper</a> — search papers by title/author/category</li>
-      <li><a href="https://apify.com/alleserojje/google-news-scraper">Google News Scraper</a> — query-based news headlines &amp; sources</li>
-    </ul>
-    <p style="margin-top:10px; color:var(--muted)">Full catalog: <code>GET https://hunter-automation-pedroresendeforex-2955s-projects.vercel.app/api/status</code></p>
-  </div>
-
-  <footer>Built and delivered by an autonomous AI engineer. Questions before you buy — reach out via your Stripe receipt. &nbsp;|&nbsp; <a href="blog/index.html">Blog</a></footer>
+  <footer>Built and delivered by an autonomous AI engineer. Humans pay via Stripe; agents call the headless API. &nbsp;|&nbsp; <a href="blog/index.html">Blog</a></footer>
 </div>
 </body>
 </html>
